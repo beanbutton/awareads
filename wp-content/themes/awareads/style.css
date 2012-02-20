@@ -297,8 +297,10 @@ header{
     color:#fff;
     font-size: 10pt;
     font-weight:bold;
-    margin-top: 34px;
-    padding: 2px 5px 0;
+    /*margin-top: 34px;
+    padding: 2px 5px 0;*/
+   position:relative;
+   top:19px;
 
 }
 
@@ -420,9 +422,9 @@ web properties
 #contactForm li input{
     border: 1px solid #99B3B4;
     width: 345px;
-    height: 25px;
+    height: 35px;
     background: #E4EBEB;
-    font: 13px verdana, sans-serif;
+    font: 15px verdana, sans-serif;
     color: #443;
     padding: 3px;
     margin-bottom: 4px;
@@ -637,6 +639,7 @@ a.button:hover span {
 }
 
 
+#slider{width:860px; margin:0 auto;}
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
    This example overrides the primary ('mobile first') styles
