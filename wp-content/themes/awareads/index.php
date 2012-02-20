@@ -27,7 +27,7 @@
 
             <?php else : ?>
 
-                <h2 class="title">Can't find Page</h2>
+                <h2 class="title">Sorry, couldn't find Page</h2>
                 
             <?php endif; ?>
                    
