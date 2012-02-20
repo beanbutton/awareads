@@ -45,20 +45,12 @@
         <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
              chromium.org/developers/how-tos/chrome-frame-getting-started -->
         <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
+		
         <div id="headerWrapper">
             <header>
-                <a class="fl" href="/"><div id="logo"></div></a>
+                <a class="fl" href="index.php"><div id="logo"></div></a>
                 <nav id="mainNavList" class="fl" role="navigation">
                    <?php wp_nav_menu(array('menu_id' => 'mainNavList' )); ?>
-                    <!--<ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Events</li>
-                        <li>Oasis</li>
-                        <li>Web Properties</li>
-                        <li>Contact Us</li>
-                    </ul>-->
                 </nav>
                 <a href="linked.php"><div id="linkedin"></div></a>
             <?php wp_head(); ?> 

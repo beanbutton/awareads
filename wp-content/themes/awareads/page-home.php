@@ -5,13 +5,10 @@
 ?>
 <?php get_header(); ?>
 <!--Contents-->
-<div id="mainContainer">
-    <section id="hero">
-        <!--<img src="<?php bloginfo('template_url'); ?>/img/placeholder.jpg" width="860" height="325">-->
-        <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+	<!--Jquery meteor carousel--> 
+    <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 
-    </section>
-    <section id="shadow"></section>
+ <div id="mainContainer">
     <section id="content">
         <h2>About AwareAds</h2>
         <p><?php the_content(); ?></p>
