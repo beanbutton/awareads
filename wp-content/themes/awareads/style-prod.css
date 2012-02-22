@@ -42,7 +42,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea { font-family: "Arial", "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif; color: #000; }
+html, button, input, select, textarea { font-family: 'Calibri',Helvetica,Arial,'MS Trebuchet',sans-serif; color: #000; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4;}
 
@@ -254,20 +254,27 @@ body{
     z-index: -9999;
 }
 
-#headerWrapper{
-    width: 955px;
+#bodyWrapper{
+    width:865px;
     margin: 0 auto;
-    margin-bottom:30px;
     padding: 0;
-    height: 97px;
+
+}
+
+#headerWrapper{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    height: 130px;
 }
 
 header{
     float: left;
     margin:0; 
     padding:0; 
-	width:95px;
-    height:97px;
+	width:960px;
+    /*margin-bottom: 20px;*/
+	height:97px;
 }
 
 #headerWrap{
@@ -281,34 +288,58 @@ header{
     width: 223px; 
     height: 97px; 
     display: block;
-	
+	margin-left:40px;
+	margin-right:40px;
+   /* margin-right:50px;*/
+    margin-top:10px;
 }
+
+
+#mainNavList{ 
+    font-family: "Verdana", "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
+    color:#fff;
+    font-size: 10pt;
+    font-weight:bold;
+	float: left;
+	margin-top: 37px;
+    /*margin-top: 34px;
+    padding: 2px 5px 0;*/
+   /*position:relative;
+   top:19px;*/
+
+}
+
+#mainNavList a{color: #fff;}
+#mainNavList a:hover{color: #3d3d3d;}
+
+#mainNavList ul li{
+    float:left;
+    display:inline-block;
+    padding:0;
+}
+
 
 #linkedin {
     background: transparent url(img/linkedin.png); 
     width: 47px; 
     height: 47px; 
     display: block;
-    margin-top:35px;
+	float:left;
+	margin-top:35px;
+    /*position: relative;
+    top: 36px;
+    left: 860px;*/
+        
+
 }
 
 /*Jquery Metor Carousel*/
 
 .meteor-slides{
+	width:845px !important;
+	height:320px !important;
 	box-shadow: 0 0 20px grey;
-	-moz-box-shadow: 0 0 20px grey;
-	-webkit-box-shadow: 0 0 20px grey;
-	
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#666666')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=280, Color='#666666'),
-	 progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#666666'),
-	 progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#666666');
-	
 	margin: 0 auto 70px !important;
-	width:845px;
-	height:320px;
 } 
 
 .navpaged, .navboth{padding: 0 !important;}
@@ -323,7 +354,7 @@ header{
     border-bottom: #950C00 solid 3px; 
     margin-bottom: 35px; 
     color:#333333;
-    font-family: "Arial","Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Calibri',Helvetica,Arial,'MS Trebuchet',sans-serif;
     font-weight: normal;
 }
 
@@ -336,12 +367,14 @@ header{
     position: relative;
     top:-45px;
     left:-76px;
+
+
 }
 
 #content{
     padding: 0 0 25px;
     margin-top: -30px;
-    /padding:0;
+	/padding:0;
 	/margin-top:0;
 }
 
@@ -376,18 +409,23 @@ web properties
 #contactForm{
     list-style:none;
     margin:0;
-    font-family: "Arial","Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Calibri',Helvetica,Arial,'MS Trebuchet',sans-serif;
     font-weight: normal;
     
 }
 
 .wpcf7 ul{padding: 0 0 0 10px;}
 #contactForm li{
+    /*float: left;
+    height: 60px;
+    margin:0 0 20px;
+    position: relative;
+    width: 400px;*/
     padding-bottom: 12px;
 }
 
 #contactForm li label{
-   font-size: 16px;
+   font-size: 17px;
    color:#666;
     
 }
@@ -415,15 +453,14 @@ web properties
 ********************/
 #footer-big{
     position: relative;
-    background: #232323 url(img/bg-footer.png) repeat-x;
+    background: url(img/bg-footer.png) repeat;
     border-bottom: 0px solid #7B7B7B;
     color: #fff;
     font-size: 14px;
-    width:100%;
 
 }
 
-.fcontainer {
+#footer-big .fcontainer {
     padding: 25px 0 25px;
 }
 
@@ -432,26 +469,24 @@ web properties
     margin: 0 auto;
 }
 
-.fcontainer ul#fnav{
-	padding:0 !important; 
-
-	}
+.fcontainer ul#fnav{padding:0 !important; }
 
 #fnav{list-style: none;}
 
 .fcontainer ul li {
     border-right: solid 2px #fff;
     display: inline-block;
-    padding-right: 10px;
+	padding-right: 10px;
     padding-left: 5px;
-    font-size: 12px;
-   /**ie7**/
-  	 /display:inline;
-    /zoom:1;
-	/padding-left:10px;
+    font-size: 15px;
+	/*ie7*/
+	/display: inline;
+	/zoom:1;
+    
 }
 
 .fcontainer ul li a{color: #ffffff;}
+
 .fcontainer ul li a:hover{color: #999999;}
 
 #fnav ul > li:last-child {
@@ -460,7 +495,7 @@ web properties
 
 #footer-sml{
     background: #232323 url(img/bg-footer2.png) repeat-x;
-    font-family: Lucida Grande;
+    color: #787678;
     font-size: 12px;
     padding-top: 25px;
     padding-bottom: 13px;
@@ -519,7 +554,7 @@ a.button:hover span {
 }
 .wpcolumn-wrapper-2 .wpcolumn-1 {
     color:#888888;
-    font-family:'Lucida Grande',Verdana,Arial,sans-serif;
+    font-family:'Calibri',Helvetica,Arial,'MS Trebuchet',sans-serif;
     font-size:16px;
     float: none;
     width: auto;
@@ -534,7 +569,7 @@ a.button:hover span {
 }
 .wpcolumn-wrapper-3 .wpcolumn-1 {
     color:#888888;
-    font-family:'Lucida Grande',Verdana,Arial,sans-serif;
+    font-family:'Calibri',Helvetica,Arial,'MS Trebuchet',sans-serif;
     font-size:16px;
     float: none;
     width: auto;
@@ -543,91 +578,82 @@ a.button:hover span {
 /* =Menu
 -------------------------------------------------------------- */
 
-#access {
-	clear: both;
-	display: block;
-	float: left;
-	margin: 0 auto 6px;
-	margin-top:38px;
-	font-weight:bold;
-
+#mainNavList ul {
+    font-size: 13px;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
-#access ul {
-	font-size: 13px;
-	list-style: none;
-	margin: 0 0 0 -0.8125em;
-	padding-left: 0;
+#mainNavList li {
+    float: left;
+    position: relative;
 }
-#access li {
-	float: left;
-	position: relative;
+#mainNavList a {
+    color: #eee;
+    display: block;
+    line-height: 3.333em;
+    padding: 0 1.2125em;
+    text-decoration: none;
 }
-#access a {
-	color: #eee;
-	display: block;
-	line-height: 3.333em;
-	padding: 0 1.2125em;
-	text-decoration: none;
+#mainNavList ul ul {
+    -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    display: none;
+    float: left;
+    margin: 0;
+    position: absolute;
+    top: 3.333em;
+    left: 0;
+    width: 170px;
+    z-index: 99999;
 }
-#access ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	margin: 0;
-	position: absolute;
-	top: 3.333em;
-	left: 0;
-	width: 188px;
-	z-index: 99999;
+#mainNavList ul ul ul {
+    left: 100%;
+    top: 0;
 }
-#access ul ul ul {
-	left: 100%;
-	top: 0;
+#mainNavList ul ul a {
+    background: #f9f9f9;
+    border-bottom: 1px dotted #ddd;
+    color: #444;
+    font-size: 13px;
+    font-weight: normal;
+    height: auto;
+    line-height: 1.4em;
+    padding: 10px 10px;
+    width: 152px;
 }
-#access ul ul a {
-	background: #f9f9f9;
-	border-bottom: 1px dotted #ddd;
-	color: #444;
-	font-size: 13px;
-	font-weight: normal;
-	height: auto;
-	line-height: 1.4em;
-	padding: 10px 10px;
-	width: 168px;
+#mainNavList li:hover > a,
+#mainNavList ul ul :hover > a,
+#mainNavList a:focus {
+    background: #efefef;
 }
-#access li:hover > a,
-#access ul ul :hover > a,
-#access a:focus {
-	background: #efefef;
+#mainNavList li:hover > a,
+#mainNavList a:focus {
+    background: #f9f9f9; /* Show a solid color for older browsers */
+    background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+    background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+    background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+    color: #373737;
 }
-#access li:hover > a,
-#access a:focus {
-	background: #f9f9f9; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-	color: #373737;
+#mainNavList ul li:hover > ul {
+    display: block;
 }
-#access ul li:hover > ul {
-	display: block;
-}
-#access .current-menu-item > a,
-#access .current-menu-ancestor > a,
-#access .current_page_item > a,
-#access .current_page_ancestor > a {
-	font-weight: bold;
+#mainNavList .current-menu-item > a,
+#mainNavList .current-menu-ancestor > a,
+#mainNavList .current_page_item > a,
+#mainNavList .current_page_ancestor > a {
+    font-weight: bold;
+    background: #f9f9f9; /* Show a solid color for older browsers */
+    background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+    background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+    background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+    color: #373737;
 }
 
-#nav1{
-	float: left; 
-	width:223px; 
-	padding-left:60px;
-	padding-right:62px;}
-#nav2{float: left; width:560px;}
-#nav3{float: left; width:47px; margin-right:3px;}
+
 #slider{width:860px; margin:0 auto;}
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -664,7 +690,7 @@ a.button:hover span {
 /* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-.clearfix { *zoom: 1; clear:both;}
+.clearfix { *zoom: 1; }
 
 
 
