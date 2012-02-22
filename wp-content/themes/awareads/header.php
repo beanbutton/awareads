@@ -54,16 +54,7 @@
           	   </nav>
             </div>
         	<div id="nav3"><a href="linked.php"><div id="linkedin"></div></a></div>
-        	<!-- <a href="index.php"><div id="logo"></div></a>-->
-             
-             <!--
-             	 <nav id="menu" class="fl" role="navigation">
-                   <?php wp_nav_menu(array('menu_id' => 'mainNavList' )); ?>
-                </nav>
-              -->
-              
-              <!--  <a href="linked.php"><div id="linkedin"></div></a>-->
-            <?php wp_head(); ?> 
+        	<?php wp_head(); ?> 
             <!--header-->
         </div>
 
