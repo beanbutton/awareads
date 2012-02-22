@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 <!--Contents-->
-<div id="bodyWrapper">
+
     <div id="mainContainer">
       <!--start-->
       

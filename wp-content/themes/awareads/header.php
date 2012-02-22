@@ -47,14 +47,23 @@
         <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 		
         <div id="headerWrapper">
-            <header>
-                <a class="fl" href="index.php"><div id="logo"></div></a>
-                <nav id="mainNavList" class="fl" role="navigation">
+        	<div id="nav1"><a href="index.php"><div id="logo"></div></a></div>
+        	<div id="nav2">
+        		<nav id="access" class="fl" role="navigation">
+                  	<?php wp_nav_menu(); ?>
+          	   </nav>
+            </div>
+        	<div id="nav3"><a href="linked.php"><div id="linkedin"></div></a></div>
+        	<!-- <a href="index.php"><div id="logo"></div></a>-->
+             
+             <!--
+             	 <nav id="menu" class="fl" role="navigation">
                    <?php wp_nav_menu(array('menu_id' => 'mainNavList' )); ?>
                 </nav>
-                <a href="linked.php"><div id="linkedin"></div></a>
+              -->
+              
+              <!--  <a href="linked.php"><div id="linkedin"></div></a>-->
             <?php wp_head(); ?> 
-            </header>
             <!--header-->
         </div>
 

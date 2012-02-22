@@ -5,7 +5,7 @@
 ?>
 
 <br class="clearfix">
-</div><!--bodyWrapper-->
+<!--bodyWrapper-->
 
 <div id="footer-big">
 

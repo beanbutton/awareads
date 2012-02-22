@@ -254,26 +254,20 @@ body{
     z-index: -9999;
 }
 
-#bodyWrapper{
-    width:865px;
-    margin: 0 auto;
-    padding: 0;
-
-}
-
 #headerWrapper{
-    width: 865px;
+    width: 960px;
     margin: 0 auto;
+    margin-bottom:30px;
     padding: 0;
-    height: 130px;
+    height: 97px;
 }
 
 header{
     float: left;
     margin:0; 
     padding:0; 
-    margin-bottom: 20px;
-    height:130px;
+	width:960px;
+    height:97px;
 }
 
 #headerWrap{
@@ -287,43 +281,15 @@ header{
     width: 223px; 
     height: 97px; 
     display: block;
-    margin-right:50px;
-    margin-top:10px;
+	
 }
-
-
-#mainNavList{ 
-    font-family: "Verdana", "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
-    color:#fff;
-    font-size: 10pt;
-    font-weight:bold;
-    /*margin-top: 34px;
-    padding: 2px 5px 0;*/
-   position:relative;
-   top:19px;
-
-}
-
-#mainNavList a{color: #fff;}
-#mainNavList a:hover{color: #3d3d3d;}
-
-#mainNavList ul li{
-    float:left;
-    display:inline-block;
-    padding:0;
-}
-
 
 #linkedin {
     background: transparent url(img/linkedin.png); 
     width: 47px; 
     height: 47px; 
     display: block;
-    position: relative;
-    top: 36px;
-    left: 860px;
-        
-
+    margin-top:35px;
 }
 
 /*Jquery Metor Carousel*/
@@ -331,6 +297,8 @@ header{
 .meteor-slides{
 	box-shadow: 0 0 20px grey;
 	margin: 0 auto 70px !important;
+	width:845px;
+	height:320px;
 } 
 
 .navpaged, .navboth{padding: 0 !important;}
@@ -358,8 +326,6 @@ header{
     position: relative;
     top:-45px;
     left:-76px;
-
-
 }
 
 #content{
@@ -405,11 +371,6 @@ web properties
 
 .wpcf7 ul{padding: 0 0 0 10px;}
 #contactForm li{
-    /*float: left;
-    height: 60px;
-    margin:0 0 20px;
-    position: relative;
-    width: 400px;*/
     padding-bottom: 12px;
 }
 
@@ -563,82 +524,91 @@ a.button:hover span {
 /* =Menu
 -------------------------------------------------------------- */
 
-#mainNavList ul {
-    font-size: 13px;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
+#access {
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto 6px;
+	margin-top:38px;
+	font-weight:bold;
+
 }
-#mainNavList li {
-    float: left;
-    position: relative;
+#access ul {
+	font-size: 13px;
+	list-style: none;
+	margin: 0 0 0 -0.8125em;
+	padding-left: 0;
 }
-#mainNavList a {
-    color: #eee;
-    display: block;
-    line-height: 3.333em;
-    padding: 0 1.2125em;
-    text-decoration: none;
+#access li {
+	float: left;
+	position: relative;
 }
-#mainNavList ul ul {
-    -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    display: none;
-    float: left;
-    margin: 0;
-    position: absolute;
-    top: 3.333em;
-    left: 0;
-    width: 170px;
-    z-index: 99999;
+#access a {
+	color: #eee;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
 }
-#mainNavList ul ul ul {
-    left: 100%;
-    top: 0;
+#access ul ul {
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 3.333em;
+	left: 0;
+	width: 188px;
+	z-index: 99999;
 }
-#mainNavList ul ul a {
-    background: #f9f9f9;
-    border-bottom: 1px dotted #ddd;
-    color: #444;
-    font-size: 13px;
-    font-weight: normal;
-    height: auto;
-    line-height: 1.4em;
-    padding: 10px 10px;
-    width: 152px;
+#access ul ul ul {
+	left: 100%;
+	top: 0;
 }
-#mainNavList li:hover > a,
-#mainNavList ul ul :hover > a,
-#mainNavList a:focus {
-    background: #efefef;
+#access ul ul a {
+	background: #f9f9f9;
+	border-bottom: 1px dotted #ddd;
+	color: #444;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1.4em;
+	padding: 10px 10px;
+	width: 168px;
 }
-#mainNavList li:hover > a,
-#mainNavList a:focus {
-    background: #f9f9f9; /* Show a solid color for older browsers */
-    background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-    background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-    background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-    color: #373737;
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+	background: #efefef;
 }
-#mainNavList ul li:hover > ul {
-    display: block;
+#access li:hover > a,
+#access a:focus {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	color: #373737;
 }
-#mainNavList .current-menu-item > a,
-#mainNavList .current-menu-ancestor > a,
-#mainNavList .current_page_item > a,
-#mainNavList .current_page_ancestor > a {
-    font-weight: bold;
-    background: #f9f9f9; /* Show a solid color for older browsers */
-    background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-    background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-    background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-    color: #373737;
+#access ul li:hover > ul {
+	display: block;
+}
+#access .current-menu-item > a,
+#access .current-menu-ancestor > a,
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+	font-weight: bold;
 }
 
-
+#nav1{
+	float: left; 
+	width:223px; 
+	padding-left:60px;
+	padding-right:63px;}
+#nav2{float: left; width:560px;}
+#nav3{float: left; width:47px;}
 #slider{width:860px; margin:0 auto;}
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
