@@ -298,13 +298,13 @@ header{
 	box-shadow: 0 0 20px grey;
 	-moz-box-shadow: 0 0 20px grey;
 	-webkit-box-shadow: 0 0 20px grey;
-	
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#666666')";
-	/* For IE 5.5 - 7 */
+
+	/* For IE 8 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#666666')";*/
+	/* For IE 5.5 - 7 
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=280, Color='#666666'),
 	 progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#666666'),
-	 progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#666666');
+	 progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#666666');*/
 	
 	margin: 0 auto 70px !important;
 	width:845px;
